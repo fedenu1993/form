@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario ✔</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+  <h1 id="title">¡Sorteo para celular!</h1>
+  <p id="description">Completa el formulario a continuación</p>
+  <form id="survey-form">
+    <div class="boxFlex">
+      <label id="name-label" for="name">Nombre</label>
+      <input placeholder="Escribe tu nombre" id="name" type="text" required> 
+      <label id="surname-label" for="surname">Apellido</label>
+      <input placeholder="Escribe tu apellido" id="surname" type="text" required>
+    </div>
+    <div>
+      <label id="email-label" for="email">Email</label>
+      <input placeholder="Escribe tu correo" id="email" type="email" required>
+    </div>
+    <div>
+      <label for="number" id="number-label">Age</label>
+      <input placeholder="Escribe tu edad" id="number" type="number" min="0" max="100">
+    </div>
+    <div>
+      <p>¿Como conociste el sorteo?</p>
+      <select id="dropdown">
+        <option disabled selected>Elige una opcion!</option>
+        <option>Amigos</option>
+        <option>Trabajo</option>
+        <option>Familia</option>
+      </select>
+    </div>
+    <div>
+      <p>Marca</p>
+        <label>
+          <input class="input" type="radio" name="choises" value="ip">Iphone
+        </label>
+        <label>
+          <input class="input" type="radio" name="choises" value="moto">Motorola
+        </label>
+        <label>
+          <input class="input" type="radio" name="choises" value="sams">Samsung
+        </label>
+    </div>
+    <div>
+      <p>Especificaciones</p>
+       <label>
+          <input class="input" type="checkbox" value="camera">Cámara
+        </label>
+        <label>
+          <input class="input" type="checkbox" value="sensor">Sensor
+        </label>
+        <label>
+          <input class="input" type="checkbox" value="gps">Gps
+        </label>
+        <label>
+          <input class="input" type="checkbox" value="ram">+1GbRam
+        </label>
+    </div>
+    <div>
+      <p>¿Por qué te gustaria ganar uno?</p>
+      <textarea id="" placeholder="Compartilo con nosotros!"></textarea>
+    </div>
+    <div>
+      <button id="submit">Enviar</button>
+    </div>
+  </form>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="alert.js"></script>
+</body>
+</html>
