@@ -2,12 +2,11 @@ $(document).ready(function(){
 
   $("#titulo").click(function(){
     $("#titulo").addClass("arriba")
+    $("#survey-form").addClass("sube")
     setTimeout(()=>{
-      $("#survey-form").css("display","flex")
       $("#titulo").css("display","none")
-      $("#survey-form").addClass("sube")
+      $("#survey-form").css("display","flex")
     },1500)
-
   })
   
   
@@ -48,12 +47,15 @@ $(document).ready(function(){
     if($("#checkRa")[0].checked){
       $("#checkRa")[0].checked = false;
     }
+    // if($("#dropdown")[0][0].selected){
+    //   $("#checkRa")[0].checked = false;
+    // }
+
     $(".swal2-confirm").click(()=>{
       setTimeout(()=>{
         window.location.reload();
       },1000)
     })
-
     
     return false;
 

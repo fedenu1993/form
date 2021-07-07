@@ -27,21 +27,21 @@
           <input class="input-text" placeholder="Correo" id="email" type="email" required>
         </div>
         <div class="boxFlex">
-          <input class="input-text" placeholder="Edad" id="number" type="number" min="0" max="100">
+          <input class="input-text" placeholder="Edad" id="number" type="number" min="0" max="100" required>
         </div>
         <div class="boxFlex">
-          <select class="input-text" id="dropdown">
-            <option disabled selected>¿Como conociste el sorteo?</option>
-            <option>Amigos</option>
-            <option>Trabajo</option>
-            <option>Familia</option>
+          <select class="input-text" id="dropdown" required>
+            <option value="">¿Como conociste el sorteo?</option>
+            <option value="amigos">Amigos</option>
+            <option value="trabajo">Trabajo</option>
+            <option value="familia">Familia</option>
           </select>
         </div>
         <div class="boxFlex">
           <p>Marca</p>
           <div class="boxLabel">
               <label>
-                <input id="radioIp" class="input" type="radio" name="choises" value="ip">Iphone
+                <input id="radioIp" class="input" type="radio" name="choises" value="ip" required>Iphone
               </label>
               <label>
                 <input id="radioMo" class="input" type="radio" name="choises" value="moto">Motorola
@@ -69,7 +69,7 @@
           </div>
         </div>
         <div>
-          <textarea id="mensaje" placeholder="¿Por qué te gustaria ganar uno?"></textarea>
+          <textarea id="mensaje" placeholder="¿Por qué te gustaria ganar uno?" required></textarea>
         </div>
         <div>
           <button id="submit">Enviar</button>
